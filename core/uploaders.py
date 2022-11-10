@@ -12,10 +12,7 @@ __all__ = ('NyaaSi', 'NyaaNet', 'Anidex', 'TokyoTosho', 'AniRena')
 
 DESCRIPTION = '''
 %sp HEVC(x265) AAC %s.
-Subtitles By: %s.
-Any feedback helpful.
-
-If you like this, please seed as much as possible.
+please seed as much as possible.
 Visit %s for direct download links for individual episodes and all our releases!
 '''.strip()
 
@@ -55,7 +52,7 @@ class NyaaSi(BaseUploader):
                 'category': '1_2',
                 'information': settings.SITE_URL,
                 'description': description,
-                'anonymous': False,
+                'anonymous': True,
                 'hidden': False,
                 'complete': self.batch,
                 'remake': True,
