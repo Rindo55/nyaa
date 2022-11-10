@@ -42,7 +42,7 @@ class BaseEncoder:
             'preset': 'slow',
             'pix_fmt': 'yuv420p',
             'vf': ','.join(vf_args),
-            'metadata': 'Encoder Settings=Redacted, CPU - 2xAMD EPYC 7282 32 cores/64 threads, GPU - None used',
+            'metadata': 'Yugen',
             'color_range': 1,
             'color_primaries': 1,
             'colorspace': 1,
@@ -88,11 +88,11 @@ class BaseEncoder:
                 ['scale=848:480:spline16+accurate_rnd+full_chroma_int']
             ),
             720: (
-                '160k', 1.4, crf,
+                '128k', 1.4, crf,
                 ['scale=1280:720:spline16+accurate_rnd+full_chroma_int']
             ),
             1080: (
-                '192k', 1.8, crf,
+                '128k', 1.8, crf,
                 ['scale=1920:1080:spline16+accurate_rnd+full_chroma_int']
             ),
         }.get(resolution)
